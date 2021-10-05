@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/index.css" type="text/css" />
+    <link rel="stylesheet" href="./css/movie.css" type="text/css" />
+    <script>
+        $(function(){
+            load_message4();
+        })
+    </script>
+</head>
+<body>
+    <div id="text">
+    <div id="movie_content" >
+        <!-- 電影簡介 -->
+        <table>
+            <tr>
+                <td id="movie_photo"><img src="./media/movie4.jpg"></img></td>
+                <td id="movie_text">
+                    <h2 id="movie_name">孤味&emsp;<button id="add_list" onclick="add(4)">加入收藏</button></h2><br>
+                    <a href="https://www.youtube.com/watch?v=UKHhlhQROH4">預告片點此</a>
+                    <p>上映日期：2020/11/06</p>
+                    <p>發行商：威視電影</p>
+                    <p>導演：許承傑</p>
+                    <p>主要演員：陳淑芳, 謝盈萱, 徐若瑄, 孫可芳, 丁寧, 陳姸霏</p><br>
+                    <p>劇情大綱：秀英在70大壽當天接到丈夫離世的噩耗，在替這位有名無實的丈夫<br>
+                                &emsp;&emsp;&emsp;&emsp;&emsp;籌辦喪禮的同時，竟意外迎來了另一位陪伴丈夫度過晚年的女人，<br>
+                                &emsp;&emsp;&emsp;&emsp;&emsp;令她不得不再次面對內心埋藏已久的怨懟！</p>  
+                </td> 
+            </tr>
+        </table>
+        <!-- 留言區 -->
+        <div id="message">
+            <b><h3>討論區：</h3></b><hr id="longer_hr">
+            <textarea id="discuss" cols="80" rows="3"></textarea>
+            <input type="button" id="message_button" value="留言" onclick="message4()"><br><br><br><br>
+            <p>共<span id="num_messages4">0</span>則留言</p>
+            <div id="message_area4"></div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <link rel="stylesheet" href="./css/index.css" type="text/css" />
+    <link rel="stylesheet" href="./css/movie_list.css" type="text/css" />
+    <script>
+      $(function() {
+        $("a").click(function(){
+          if($(this).attr("id") == "movie6")
+            $("#text").load("movie6.html");
+          if($(this).attr("id") == "movie7")
+            $("#text").load("movie7.html");
+        })
+      })
+    </script>
+</head>
+<body>
+  <div id="text">
+    <table id="movie_list">
+      <tr>
+        <td id="movie_photo"><a id="movie6"><img src="./media/movie6.jpg">腿</a></img></td>
+        <td id="movie_photo"><a id="movie7"><img src="./media/movie7.jpg">杏林醫院</a></img></td>
+      </tr>  
+    </table>
+  </div>
+</body>
+</html>

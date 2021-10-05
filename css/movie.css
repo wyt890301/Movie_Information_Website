@@ -1,0 +1,44 @@
+#movie_content{ background-color: #ececec;
+                margin: 0px auto;
+                width: 920px;
+                padding-bottom: 10px;
+                margin-bottom: 30px}
+table img{ width:250px;
+           margin:15px;}
+#movie_text{ width:670px;
+             padding: 10px 50px 10px 25px;
+             display: block;
+             color: black}
+#movie_text>p{ font-size: 16px;
+               margin:0.2em;}
+#movie_text>a{ font-size: 16px;
+               margin:0.2em;}
+#add_list{ font-size: 16px;
+           margin-left:50px;
+           float: right;
+           height: 40px;
+           background-color: #00FFFF;}
+#message { padding-top: 30px;
+           margin-left:25px;
+           margin-right: 25px;
+           color:black;}
+#message_button{ margin-left:5px;
+                 float: left;}
+#discuss{float: left;
+         display: block;}
+#longer_hr { display: block;
+             width:860px;
+             margin-top: 0.5em;
+             margin-bottom: 1em;
+             border-style: inset;
+             border-width: 1px;
+             background-color:black;}
+#message p { font-size:18px;}
+#message_area1 div{ padding-bottom: 10px;}
+#message_area2 div{ padding-bottom: 10px;}
+#message_area3 div{ padding-bottom: 10px;}
+#message_area4 div{ padding-bottom: 10px;}
+#message_area5 div{ padding-bottom: 10px;}
+#message_area6 div{ padding-bottom: 10px;}
+#message_area7 div{ padding-bottom: 10px;}
+#now_{ color: #327f5e; }

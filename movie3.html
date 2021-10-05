@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/index.css" type="text/css" />
+    <link rel="stylesheet" href="./css/movie.css" type="text/css" />
+    <script>
+        $(function(){
+        load_message3();
+    })
+    </script>
+</head>
+<body>
+    <div id="text">
+    <div id="movie_content">
+        <table>
+            <tr>
+                <td id="movie_photo"><img src="./media/movie3.jpg"></img></td>
+                <td id="movie_text">
+                    <h2 id="movie_name">魔物獵人&emsp;<button id="add_list" onclick="add(3)">加入收藏</button></h2><br>
+                    <a href="https://www.youtube.com/watch?v=azADgxMwX9g">預告片點此</a>
+                    <p>上映日期：2020/12/04</p>
+                    <p>發行商：Sony Pictures</p>
+                    <p>導演：Paul W.S. Anderson</p>
+                    <p>主要演員：Milla Jovovich, Tony Jaa, Diego Boneta, Ron Perlman</p><br>
+                    <p>劇情大綱：一支聯合國部隊來到了通往另一個世界的穿越口，並在那協助<br>
+                                &emsp;&emsp;&emsp;&emsp;&emsp;住民與巨型怪物戰鬥，共同努力守護通往另一個世界的穿越口<br>
+                                &emsp;&emsp;&emsp;&emsp;&emsp;以防止怪物侵襲地球。</p>
+                </td> 
+            </tr>
+        </table>
+        <div id="message">
+            <b><h3>討論區：</h3></b><hr id="longer_hr">
+            <textarea id="discuss" cols="80" rows="3"></textarea>
+            <input type="button" id="message_button" value="留言" onclick="message3()"><br><br><br><br>
+            <p>共<span id="num_messages3">0</span>則留言</p>
+            <div id="message_area3"></div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/index.css" type="text/css" />
+    <link rel="stylesheet" href="./css/movie.css" type="text/css" />
+    <script>
+        $(function(){
+            load_message2();
+        })
+    </script>
+</head>
+<body>
+    <div id="text">
+    <div id="movie_content">
+        <table>
+            <tr>
+                <td id="movie_photo"><img src="./media/movie2.jpg"></img></td>
+                <td id="movie_text">
+                    <h2 id="movie_name">古魯家族：新石代&emsp;<button id="add_list" onclick="add(2)">加入收藏</button></h2><br>
+                    <a href="https://www.youtube.com/watch?v=56CL4EjEY3w">預告片點此</a>
+                    <p>上映日期：2020/11/27</p>
+                    <p>發行商：Universal Studios</p>
+                    <p>導演：Joel Crawford</p>
+                    <p>主要配音員：Nicolas Cage, Ryan Reynolds, Emma Stone, Catherine Keener</p>
+                    <p>簡介：《古魯家族》的續作</p><br>
+                    <p>劇情大綱：古魯家族自離開洞穴後遇到另一個最大威脅：一個名為郝野人的家族。</p>
+                </td> 
+            </tr>
+        </table>
+        <div id="message">
+            <b><h3>討論區：</h3></b><hr id="longer_hr">
+            <textarea id="discuss" cols="80" rows="3"></textarea>
+            <input type="button" id="message_button" value="留言" onclick="message2()"><br><br><br><br>
+            <p>共<span id="num_messages2">0</span>則留言</p>
+            <div id="message_area2"></div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

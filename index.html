@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>電影交流平台</title>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/index.css" type="text/css" />
+    <script>
+      $.getScript("./js/index.js");
+      //navbar切換畫面
+      $(function() {
+        $(".nav-item").click(function(){
+          if($(this).attr("id") == "index")
+            $("#text").load("picture.html");
+          else if($(this).attr("id") == "movie_now")
+            $("#text").load("movie_now.html");
+          else 
+            $("#text").load("movie_future.html");
+        })
+      })
+      //主頁面載入會員以及主畫面
+      $(function(){
+        $("#text").load("picture.html");
+        $("aside").load("member.html");
+      })
+    </script>
+</head>
+<body>
+  <!-- 最上面的功能條 -->
+  <nav class="navbar navbar-light navbar-fixed-top" z-index="1">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand">
+          <span><img id="movie" src="./media/video-camera.png">&nbsp電影交流平台</img></span>
+        </a>
+      </div>
+      <div id="navbar-list" class="navbar-btn">
+        <ul class="nav nav-pills">
+          <li class="nav-item" id="index"><a>首頁</a></li>
+          <li class="nav-item" id="movie_now"><a>近期上映</a></li>
+          <li class="nav-item" id="movie_future"><a>即將上映</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- 登入頁面 -->
+  <aside></aside>
+  <!-- ajax轉換地方 -->
+  <article><div id="text"></div></article>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/index.css" type="text/css" />
+    <link rel="stylesheet" href="./css/movie.css" type="text/css" />
+    <script>
+        $(function(){
+        load_message5();
+    })
+    </script>
+</head>
+<body>
+    <div id="text">
+    <div id="movie_content">
+        <table>
+            <tr>
+                <td id="movie_photo"><img src="./media/movie5.jpg"></img></td>
+                <td id="movie_text">
+                    <h2 id="movie_name">親愛的房客&emsp;<button id="add_list" onclick="add(5)">加入收藏</button></h2><br>
+                    <a href="https://www.youtube.com/watch?v=sx6FGb-NQ7U">預告片點此</a>
+                    <p>上映日期：2020/10/23</p>
+                    <p>發行商：牽猴子整合行銷股份有限公司</p>
+                    <p>導演：鄭有傑</p>
+                    <p>主要演員：莫子儀, 陳淑芳, 白潤音, 姚淳耀 </p><br>
+                    <p>劇情大綱：林健一（莫子儀飾）好心照顧一位患有糖尿病及腳有問題的房東<br>
+                                &emsp;&emsp;&emsp;&emsp;&emsp;，更收養失去爸爸房東的九歲孫兒，在所有人眼裡，林健一是個<br>
+                                &emsp;&emsp;&emsp;&emsp;&emsp;正人君子。但在周秀玉過世之後，他的動機開始受到質疑。</p>
+                </td> 
+            </tr>
+        </table>
+        <div id="message">
+            <b><h3>討論區：</h3></b><hr id="longer_hr">
+            <textarea id="discuss" cols="80" rows="3"></textarea>
+            <input type="button" id="message_button" value="留言" onclick="message5()"><br><br><br><br>
+            <p>共<span id="num_messages5">0</span>則留言</p>
+            <div id="message_area5"></div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/index.css" type="text/css" />
+    <link rel="stylesheet" href="./css/movie.css" type="text/css" />
+    <script>
+        $(function(){
+            load_message7();
+        })
+    </script>
+</head>
+<body>
+    <div id="text">
+    <div id="movie_content" >
+        <!-- 電影簡介 -->
+        <table>
+            <tr>
+                <td id="movie_photo"><img src="./media/movie7.jpg"></img></td>
+                <td id="movie_text">
+                    <h2 id="movie_name">杏林醫院&emsp;<button id="add_list" onclick="add(7)">加入收藏</button></h2><br>
+                    <a href="https://www.youtube.com/watch?v=5MT9rJp-lFY">預告片點此</a>
+                    <p>上映日期：2020/12/31</p>
+                    <p>發行商：海樂</p>
+                    <p>導演：朱家麟</p>
+                    <p>主要演員：林柏宏, 太保, 朱芷瑩, 徐立期</p>
+                    <p>簡介：《紅衣小女孩》《女鬼橋》後，實地取材 全台網友票選鬼屋第一名。</p><br>
+                    <p>劇情大綱：由台南最負盛名的法師帶隊，曉玲與妙如，她們各懷目的，義無反顧踏
+                    &emsp;&emsp;&emsp;&emsp;&emsp;入醫院，曾經在這發生的過往，逐漸湧上眼前。不料，醫院陰氣太重，<br>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;壓的眾人喘不過氣；無法投胎的怨魂糾纏，生死危在旦夕…</p>  
+                </td> 
+            </tr>
+        </table>
+        <!-- 留言區 -->
+        <div id="message">
+            <b><h3>討論區：</h3></b><hr id="longer_hr">
+            <textarea id="discuss" cols="80" rows="3"></textarea>
+            <input type="button" id="message_button" value="留言" onclick="message7()"><br><br><br><br>
+            <p>共<span id="num_messages7">0</span>則留言</p>
+            <div id="message_area7"></div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

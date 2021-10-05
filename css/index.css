@@ -1,0 +1,38 @@
+nav{ background-color:white;
+    box-shadow: 0 6px 3px -6px #999;}
+body{ margin-top: 90px;
+      margin-right:230px;}
+aside{ top:0;
+       right:0;
+       height: 100%;
+       width: 230px; 
+       position: fixed; 
+       z-index: 1;
+       background-color: #f4f4f2;
+       overflow-x: hidden;
+       padding-top: 60px;}
+#navbar-list{ 
+    display: flex;
+    padding-left: 50px;}
+#movie{
+    margin-left: 20px;
+    margin-top: -5px;
+    width:45px;} 
+.container{width:90%}
+.navbar-brand{ font-size:22px;}
+#Carousel_picture img{ width: 100%}
+#log_in{ padding:25px 25px}
+#create_form{ padding:25px 25px}
+#enter1{ margin-left:-45px}
+#enter2{ margin-left:-45px}
+hr { display: block;
+     margin-top: 0em;
+     margin-bottom: 1em;
+     width:200px;
+     border-width: 2px;
+     border-color: gray}
+h4 {margin-left:25px}
+a {margin-left:25px;
+    font-size:18px;}
+button {margin-left:25px;
+        margin-bottom:25px}

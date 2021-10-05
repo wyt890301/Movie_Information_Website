@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/index.css" type="text/css" />
+    <link rel="stylesheet" href="./css/movie.css" type="text/css" />
+    <script>
+        $(function(){
+            load_message1();
+        })
+    </script>
+</head>
+<body>
+    <div id="text">
+    <div id="movie_content" >
+        <!-- 電影簡介 -->
+        <table>
+            <tr>
+                <td id="movie_photo"><img src="./media/movie1.jpg"></img></td>
+                <td id="movie_text">
+                    <h2 id="movie_name">神力女超人1984&emsp;<button id="add_list" onclick="add(1)">加入收藏</button></h2><br>
+                    <a href="https://www.youtube.com/watch?v=Mw3u7Arx3Ss">預告片1點此</a>
+                    <a href="https://www.youtube.com/watch?v=zAyhtuLBfcM">預告片2點此</a>
+                    <p>上映日期：2020/12/17</p>
+                    <p>發行商：Warner Bros</p>
+                    <p>導演：Patty Jenkins</p>
+                    <p>主要演員：Gal Gadot, Pedro Pascal, Chris Pine, Robin Wright, Connie Nielsen</p>
+                    <p>簡介：改編自DC漫畫旗下的同名角色，本片為2017年電影《神力女超人》的續集。</p><br>
+                    <p>劇情大綱：時間快轉到了1980年代，神力女超人在她的下一個銀幕大冒險中，<br>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;發現自己面對了兩個全新的敵人：麥斯威爾洛德和豹女。</p>  
+                </td> 
+            </tr>
+        </table>
+        <!-- 留言區 -->
+        <div id="message">
+            <b><h3>討論區：</h3></b><hr id="longer_hr">
+            <textarea id="discuss" cols="80" rows="3"></textarea>
+            <input type="button" id="message_button" value="留言" onclick="message1()"><br><br><br><br>
+            <p>共<span id="num_messages">3</span>則留言</p>
+            <div id="message_area1">
+                <div>王燕萍 <span id='now_'>2020/12/22 下午3:10:05</span><br>ㄟ！這很好看ㄟ</div>
+                <div>王燕萍 <span id='now_'>2020/12/23 早上1:00:27</span><br>謀拉！我只看動漫，怎麼會知道這個好看</div>
+                <div>里薇 <span id='now_'>2020/12/23 早上6:20:33</span><br>ㄟ嘿！天亮了該睡覺囉！</div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

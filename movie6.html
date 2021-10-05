@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/index.css" type="text/css" />
+    <link rel="stylesheet" href="./css/movie.css" type="text/css" />
+    <script>
+        $(function(){
+            load_message6();
+        })
+    </script>
+</head>
+<body>
+    <div id="text">
+    <div id="movie_content" >
+        <!-- 電影簡介 -->
+        <table>
+            <tr>
+                <td id="movie_photo"><img src="./media/movie6.jpg"></img></td>
+                <td id="movie_text">
+                    <h2 id="movie_name">腿&emsp;<button id="add_list" onclick="add(6)">加入收藏</button></h2><br>
+                    <a href="https://www.youtube.com/watch?v=nsKrVXPghIQ">預告片1點此</a>
+                    <a href="https://www.youtube.com/watch?v=4mCEP2wVT-c">預告片2點此</a>
+                    <p>上映日期：2020/12/24</p>
+                    <p>發行商：甲上</p>
+                    <p>導演：張耀升</p>
+                    <p>主要演員：桂綸鎂, 楊祐寧, 張少懷</p><br>
+                    <p>劇情大綱：描述錢鈺盈（桂綸鎂飾）的丈夫鄭子漢（楊祐寧飾）在腿部截肢手術後<br>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;不幸離世，錢鈺盈想拿回丈夫被截肢的腿，卻被醫院百般刁難、互踢皮
+                    &emsp;&emsp;&emsp;&emsp;&emsp;球，於是一場異想天開的「奪腿計畫」就此展開！</p> 
+                </td> 
+            </tr>
+        </table>
+        <!-- 留言區 -->
+        <div id="message">
+            <b><h3>討論區：</h3></b><hr id="longer_hr">
+            <textarea id="discuss" cols="80" rows="3"></textarea>
+            <input type="button" id="message_button" value="留言" onclick="message6()"><br><br><br><br>
+            <p>共<span id="num_messages6">0</span>則留言</p>
+            <div id="message_area6"></div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

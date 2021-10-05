@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>電影交流平台</title>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/index.css" type="text/css" />
+    <script>
+        //收藏清單(能改變page)
+        $(function() {
+            $("a").click(function(){
+            if($(this).attr("id") == "movie1")
+                $("#text").load("movie1.html");
+            if($(this).attr("id") == "movie2")
+                $("#text").load("movie2.html");
+            if($(this).attr("id") == "movie3")
+                $("#text").load("movie3.html");
+            if($(this).attr("id") == "movie4")
+                $("#text").load("movie4.html");
+            if($(this).attr("id") == "movie5")
+                $("#text").load("movie5.html");
+            if($(this).attr("id") == "movie6")
+                $("#text").load("movie6.html");
+            if($(this).attr("id") == "movie7") 
+                $("#text").load("movie7.html");
+            })
+        })
+    </script>
+<body>
+     <!-- 最右側會員登入 -->
+    <div id="member_content">
+        <!-- 登入畫面 -->
+        <div id="hide_">
+            <form id="log_in" action="index.js" method="post">
+                <fieldset>
+                    <legend>會員登入</legend>
+                    帳號： <input type="text" id="account" size="15" autocomplete="off"><br><br>
+                    密碼： <input type="password" id="password" size="15" autocomplete="off"><br><br>
+                </fieldset>&emsp;&emsp;&emsp;
+                <input id="enter1" type="button" value="登入" onclick="login();">
+            </form><hr>
+            <h4>尚未擁有帳號？</h4>
+            <button id="create">申請帳號</button>
+            <span id="temp_name"></span>
+        </div>
+        <!-- 註冊畫面 -->
+        <form id="create_form" action="index.js" method="post">
+            <fieldset>
+                <legend>會員註冊</legend>
+                使用者名稱： <input type="text" id="new_username" size="15" autocomplete="off" placeholder="中英文名稱皆可"><br><br>
+                帳號： <input type="text" id="new_account" size="15" autocomplete="off" placeholder="5~12位英數字"><br><br>
+                密碼： <input type="password" id="new_password" size="15" autocomplete="off" placeholder="5~12位英數字"><br><br>
+            </fieldset>&emsp;&emsp;&emsp;
+            <input id="enter2" type="button" value="送出" onclick="create();">&nbsp;
+            <input id="cancel" type="button" value="取消" onclick="cancel();">
+        </form>
+    </div>
+    <script>
+        $(function(){
+            $("#create_form").hide();
+        })
+        $("#create").click(function() {
+            $("#hide_").hide();
+	        $("#create_form").show();
+        });
+        $("#cancel").click(function() {
+            $("#create_form").hide();
+            $("#hide_").show();
+        })
+    </script>
+</body>

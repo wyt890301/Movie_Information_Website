@@ -1,0 +1,16 @@
+#movie_list { background-color: #e3d1e3;
+              margin: 0px auto;
+              border-collapse: collapse;
+              margin-bottom:30px;}
+
+#movie_list img{ width:300px;
+                 margin:25px 40px 10px 20px;}
+                 
+#movie_list td{ border: 1px white ridge;
+                height: auto;
+                width:350px;
+                text-align: center;
+                font-size:20px;
+                padding-bottom:10px;} 
+#td_empty{ background-color:white}
+#movie_photo>a{ color:black;}

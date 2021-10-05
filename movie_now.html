@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/index.css" type="text/css" />
+    <link rel="stylesheet" href="./css/movie_list.css" type="text/css" />
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(function() {
+        $("a").click(function(){
+          if($(this).attr("id") == "movie1")
+            $("#text").load("movie1.html");
+          if($(this).attr("id") == "movie2")
+            $("#text").load("movie2.html");
+          if($(this).attr("id") == "movie3") 
+            $("#text").load("movie3.html");
+          if($(this).attr("id") == "movie4") 
+            $("#text").load("movie4.html");
+          if($(this).attr("id") == "movie5") 
+            $("#text").load("movie5.html");
+        })
+      })
+    </script>
+</head>
+<body>
+  <div id="text">
+    <table id="movie_list">
+        <tr>
+          <td id="movie_photo"><a id="movie1"><img src="./media/movie1.jpg">神力女超人1984</a></img></td>
+          <td id="movie_photo"><a id="movie2"><img src="./media/movie2.jpg">古魯家族：新石代</a></img></td>
+          <td id="movie_photo"><a id="movie3"><img src="./media/movie3.jpg">魔物獵人</a></img></td>
+        </tr>
+        <tr>
+          <td id="movie_photo"><a id="movie4"><img src="./media/movie4.jpg">孤味</a></img></td>
+          <td id="movie_photo"><a id="movie5"><img src="./media/movie5.jpg">親愛的房客</a></img></td>
+          <td id="td_empty"></td>
+        </tr>
+    </table>
+  </div>
+</body>
+</html>
